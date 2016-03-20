@@ -46,6 +46,7 @@ body
 {	
 	min-height: 100%;	
 	font-family: 'Quicksand' ; 
+
 }
 #home {
     
@@ -74,13 +75,21 @@ body
 	display:table-cell;
 	text-align: left;
 	vertical-align: bottom;
+	
 }
-
+#home_points
+{
+	font-weight: bold;
+	list-style-image: ;
+	letter-spacing: 0px;
+	padding-top:200%;
+}
 #home_info
 {
 	font-weight: bold;
 	color:black;
-	padding-top:100%;
+	padding-top:105%;
+	
 }
 #info_menu
 {
