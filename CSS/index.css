@@ -1,18 +1,17 @@
 #navigation
 {
-	position:fixed;
 	background-color:white;
-	z-index:999;
+
 }
 #logo
 {
     height:auto;
-    width : 150px;
+    width: 150px;
 }
 #menu{
     background-color:white;
-	font-family: "Quicksand Book Bold",Arial;
-	font-size: 15px;
+	font-family: "Quicksand",Arial;
+	font-size: medium; ;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: bold;
@@ -44,19 +43,19 @@
 }
 
 body 
-{
-	
-	font-family: "Quicksand Book Regular", Arial; 
+{	
+	min-height: 100%;	
+	font-family: 'Quicksand' ; 
 }
 #home {
     
     background: url(../Images/home.jpeg) no-repeat center center fixed;
 	color:black;
-	width:100%;
+	display: table;
+	
     height:100%;
-    min-height:100%
-	position:relative;
-	width:100%;
+    position:relative;
+    width:100%;	
 	
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -72,13 +71,16 @@ body
 }
 #home_content
 {
-	padding-top:75%;
+	display:table-cell;
+	text-align: left;
+	vertical-align: bottom;
 }
 
 #home_info
 {
-
+	font-weight: bold;
 	color:black;
+	padding-top:100%;
 }
 #info_menu
 {
@@ -97,6 +99,7 @@ body
 {
 	color:white;
 	text-align: center;
+	font-weight: bold;
 }
 #about_bg{
     
@@ -117,12 +120,14 @@ body
 {
 	background-color: #78961c;
 	color:white;
+	font-weight: bold;
 	height: 80%;
 }
 #initiatives_info
 {
 	color:black;
 	text-align: center;
+	font-weight: bold;
 }
 #initiatives_bg{
     
@@ -142,6 +147,7 @@ body
 #initiatives_content
 {
 	background-color: #ec4418;
+	font-weight: bold;
 	color:white;
 	height: 75%;
 }
