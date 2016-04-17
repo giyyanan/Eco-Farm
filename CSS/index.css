@@ -213,7 +213,7 @@ h4
 #about
 {
 	background-color: #EFEFEF;
-	padding-top: 130px;
+	padding-top: 80px;
 }
 #about_contents
 {
@@ -279,4 +279,8 @@ h2.fontColor
 p.vision_statement
 {
 
+}
+#team_statement
+{
+	font-size: x-large;
 }

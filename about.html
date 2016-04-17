@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
 	<meta name ="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 	<link href ="CSS/index.css" rel="stylesheet" />
 	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
@@ -20,24 +22,22 @@
 			<div class="navbar-header">
 				<img id="logo" class="navbar-brand" src="Images/logo.png" alt="Eco Farm"/>
 			</div>
-			<div>
-				<div class="" id="menu">
-					<div class="menu_items">
+			
+			<div class="" id="menu">
+				<div class="menu_items">
 									<!--<li><a class="menu" href="#registration">REGISTRATION / LOGIN</a></li>
 									<li><a class="menu " href="#help">HELP</a></li>
 									<li><a class="menu " href="#initiatives">INITIATIVES</a></li>-->
-									<li>
-										<a class="dropdown-toggle menu scroll-link" data-toggle="dropdown" href="about.html" >ABOUT</a>
-										<ul class="dropdown-menu dropdown">
-											<li><a href="#vision">VISION</a></li>
-											<li><a href="#team">TEAM</a></li>
-										</ul>
-									</li>
-									<li><a class="menu " href="index.html" >HOME</a></li>
+									<a class="dropdown-toggle menu scroll-link" data-toggle="dropdown" href="about.html" >ABOUT</a>
+									<ul class="dropdown-menu dropdown">
+										<li><a href="#vision">VISION</a></li>
+										<li><a href="#team">TEAM</a></li>
+									</ul>
+									<a class="menu " href="index.html" >HOME</a>
 								</div>
 							</div>
+
 						</div>
-					</div>
 					<!--<div id="info_menu" class="container" >
 						<a class="info_menu" href="">RECIPIES</a>
 						<a class="info_menu" href="">DO YOU KNOW</a>
@@ -46,42 +46,42 @@
 					</div>-->
 				</div>
 
-				<div id="about" class="row container-fluid">
+				<div id="about" class="row ">
 					<div id="about_contents" class="">
 						<div id="vision_menu" class="row conatiner" >
-							<a class="vision_menu" href="">VISION</a>
-							<a class="vision_menu" href="">TEAM</a>
+							<a class="vision_menu active" href="#vision">VISION</a>
+							<a class="vision_menu" href="#team">TEAM</a>
 							<!--<a class="vision_menu" href="">CAREERS</a>-->
-							<a class="vision_menu" href="">PRESS</a>
-							<!--<a class="vision_menu" href="">CONTACT</a>-->
+							<!--<a class="vision_menu" href="">PRESS</a>-->
+							<a class="vision_menu" href="#contact">CONTACT</a>
+							
 						</div>
-						<div class = "row divider">
-						</div>
-						<div class = "row  text-center">
-							<h2 class="fontColor">VISION</h2>
-						</div>
-
-						<div id="vision" class = "row  text-center">
+						<div id="vision" class = "text-center">
+							<div class = "row divider">
+							</div>
+							<div class = "row  text-center">
+								<h2 class="fontColor">VISION</h2>
+							</div>
 							<br>
 							<!--<p class = "col-md-12 col-lg-12">"Our vision is to improve the agriculture supply chain by connecting farmers to retailers"</p>-->
-							<p class = "We believe in creating a world where farmers are better rewarded for the share of their hard work"</p>
-								<br><br>
-							</div>
+							<p class= "col-md-12 col-lg-12">"We believe in creating a world where farmers are better rewarded for the share of their hard work"</p>
+							<br><br>
+
 
 							<div class="row col-md-12 col-lg-12 text-center">
 								<img src="Images/vision.png"/>
 							</div>	
 							<div id="vision_statement" class = "row">
-							<br><br><br>
+								<br><br><br>
 							<!--<p class = "col-md-12 col-lg-12 vision_statement">The only way to provide a higher margin to farmer and lower price to consumer is to eliminate middlemen. We want maximum share of every rupee spent by a consumer to be transferred to farmer directly, thereby improving the sustainability of Indian Agriculture eco-system</p>
 							<br><br><br>
 							<p class = "col-md-12 col-lg-12 vision_statement">While we source the vegetable produce directly from farmers, we understand the importance consumers give for high quality, touch & feel of the vegetable produce. Hence we facilitate that by branding the Fruit & Vegetable retail stores. These partner stores joined us to benefit Indian farmers. We believe our consumers will also join us in the mission to benefit our farmers, thereby improving our Indian agriculture economy</p>-->
 
-							<p class = "col-md-12 col-lg-12 vision_statement">We are all farmers at heart i.e. we nurture, care and love to see things grow. It is this same spirit we carry to create more value for the real farmers out there. We want to create a world where a farmer’s son would aspire to be farmer again.</p>
+							<p class = "container col-md-12 col-lg-12 vision_statement">We are all farmers at heart i.e. we nurture, care and love to see things grow. It is this same spirit we carry to create more value for the real farmers out there. We want to create a world where a farmer’s son would aspire to be farmer again.</p>
 							<br><br><br>
 
 							<p class = "col-md-12 col-lg-12 vision_statement">We are a team of young professional who believe that we can change the scenario in Indian agriculture. We want to re-invent the way farmers do their business. Our effort is to make the farmers reach retailers in the most efficient way by reducing middle men. The idea is to pass the benefits that are fair to the farmers.</p>
-							<br><br><br><br><br><br>
+							<br><br><br>
 						</div>
 						<div id="mission" class = "row ">
 							<div class="col-md-4 col-lg-4 text-right">
@@ -95,29 +95,36 @@
 							</div>
 						</div>
 					</div>
-					
-					
+					<div id="team" class = "text-center">
+						<div id="team_statement" class = "row">
+							<br>
+							<p class = "container col-md-12 col-lg-12 team_statement">
+								We are passionate about solving ground level problems of farmers. We, as real problems rather than solving superficial problems in the corporate world. Our work feels like the looping stories of Christopher Nolan’s movie. We go crazy on drawing boards, excel sheets, papers to get the process right. We test it on field and automate the maximum part and again we loop back for improvement.  So there is an infinite cycle that goes on till the incremental improvement tends to zero.</p>
+								<br><br>
+							</div>
+						</div>
+						<div id="contact">
+						<div id="contact_map" style="width:100%;height:720px"></div>
+						</div>
+					</div>
+					<div id="help" class="container">
 
-				</div>		
+						<div id = "help_content" class="row">
+							<h3 style="text-align:center;">THANK YOU FOR VISITING US</h3>
+							<div class="col-lg-4 col-md-4 help_content" ><img class="navbar-brand" src="Images/logo1.png" alt="Eco Farm" style="width:200px;height:auto;" /></div>
+							<div class="col-lg-4 col-md-4 help_content" ></div>
 
-
-				<div id="help" class="container">
-
-					<div id = "help_content" class="row">
-						<h3 style="text-align:center;">THANK YOU FOR VISITING US</h3>
-						<div class="col-lg-4 col-md-4 help_content" ><img class="navbar-brand" src="Images/logo1.png" alt="Eco Farm" style="width:200px;height:auto;" /></div>
-						<div class="col-lg-4 col-md-4 help_content" ></div>
-
-						<div id ="address" class="col-lg-4 col-md-4 help_content" >
-							<p >
-								<h4>Address:</h4>
-								<br>Nogyo Agriculture Marketing Pvt Ltd<br>New No:7,<br>Thiruveesar nagar,<br>K.R.Puram, Ganapathy Post,<br>Coimbatore<br>
-								<h4>follow us at</h4>
-								<img class="social_link" src="Images/Icons/twitter.png"/><img class="social_link" src="Images/Icons/facebook.png"/><img class="social_link" src="Images/Icons/googleplus.png"/>
-							</p>
+							<div id ="address" class="col-lg-4 col-md-4 help_content" >
+								<p >
+									<h4>Address:</h4>
+									<br>Nogyo Agriculture Marketing Pvt Ltd<br>New No:7,<br>Thiruveesar nagar,<br>K.R.Puram, Ganapathy Post,<br>Coimbatore<br>
+									<h4>follow us at</h4>
+									<img class="social_link" src="Images/Icons/twitter.png"/><img class="social_link" src="Images/Icons/facebook.png"/><img class="social_link" src="Images/Icons/googleplus.png"/>
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</body>
-		</html>
+			</body>
+			</html>
+			
